@@ -1274,9 +1274,6 @@ release::send_announcement () {
 # READ_RELEASE_BUCKETS - array of readable buckets for multiple sourcing of
 #                        mock staged builds
 # GCRIO_PATH - GCR path based on mock or --nomock
-# ALL_CONTAINER_REGISTRIES - when running mock (via GCB) this array also
-#                            contains k8s.gcr.io so we can check access in mock
-#                            mode before an actual release occurs
 release::set_globals () {
   logecho -n "Setting global variables: "
 
@@ -1308,7 +1305,6 @@ release::set_globals () {
   GCRIO_PATH_TEST="gcr.io/$TEST_PROJECT"
 
   GCRIO_PATH="${FLAGS_gcrio_path:-$GCRIO_PATH_TEST}"
-  ALL_CONTAINER_REGISTRIES=("$GCRIO_PATH")
 
   if ((FLAGS_nomock)); then
     RELEASE_BUCKET="$PROD_BUCKET"
@@ -1340,8 +1336,6 @@ release::set_globals () {
 
   WRITE_RELEASE_BUCKETS=("$RELEASE_BUCKET")
   READ_RELEASE_BUCKETS+=("$RELEASE_BUCKET")
-
-  ALL_CONTAINER_REGISTRIES=("$GCRIO_PATH")
 
   # TODO:
   # These KUBE_ globals extend beyond the scope of the new release refactored
