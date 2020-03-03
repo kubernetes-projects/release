@@ -18,14 +18,16 @@
 # CONSTANTS
 ###############################################################################
 
-# TODO: Need to reference official staging project here
+# TODO(prototype): Need to reference official staging project here
 readonly DEFAULT_PROJECT="k8s-staging-release-test"
-readonly PROD_PROJECT="kubernetes-release"
+# TODO(prototype): Need to reference test prod project here
+readonly PROD_PROJECT="k8s-staging-release-test"
 readonly TEST_PROJECT="${TEST_PROJECT:-${PROJECT_ID:-$DEFAULT_PROJECT}}"
 
-# TODO: Need to reference official staging project here
+# TODO(prototype): Need to reference official staging project here
 readonly DEFAULT_BUCKET="k8s-staging-release-test"
-readonly PROD_BUCKET="kubernetes-release"
+# TODO(prototype): Need to reference test prod project here
+readonly PROD_BUCKET="k8s-staging-release-test"
 readonly TEST_BUCKET="k8s-staging-release-test"
 readonly CI_BUCKET="kubernetes-release-dev"
 
