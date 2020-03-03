@@ -12,10 +12,10 @@ timeout: 1200s
 #
 # (Please do not remove this security notice.)
 secrets:
-- kmsKeyName: projects/kubernetes-release-test/locations/global/keyRings/anago/cryptoKeys/k8s-release-robot
+- kmsKeyName: projects/k8s-staging-release-test/locations/global/keyRings/release/cryptoKeys/encrypt-0
   secretEnv:
-    GITHUB_TOKEN: CiQAveh8wGJqpEkcVluO3tBntlehynOxiOPDD9u1XCONx3vuozoSUgCMoh/IJuNkqhcDTP2om2tyOStft8myMSrvnGd7NvTo+H+fI0EkLMNzkVOHxl/C0piktBm74uN70QVE+e4TTa9wwA//qpiSm/UuqYmEYeMIpyY=
-# TODO: move to the kubernetes-release-test
+    GITHUB_TOKEN: CiQAzX5NM13ZVJOM+E0k629PSa7H5Hkm4mJlPbm7hR8nr67KGAoSUQCmb2uz62tmpa7is9YJx8tlEspVytgq5HAvsd9DWey/oRCsv4VkVBRhnNnlpnmQ8eDPXAaS0GfjrP4KuCgT3mM570N1FH6hTN+u7Yg8uaOxWw==
+# TODO: move to the k8s-staging-release-test
 - kmsKeyName: projects/cf-london-servces-k8s/locations/global/keyRings/hhorl-k8s-release/cryptoKeys/sendgrid
   secretEnv:
     SENDGRID_API_KEY: CiQAkn5y0WUR0kZIqj1v4UW2McFdlceel2zptSa468+Ir/gDeh0SbwDMTYRJdFtqt2x2hGPN7oOoMs2lCLFoY+oh4Mb1b/nQehooMYQuNwupxOpnwE+d/GbEFhwtMg9wbA5zhOMYPe0OLsSAXvt4w/IC1Z701Ev3CMdT6ZjicillZoBlFYhVlFPQLWcm8jtobdQcDj91eg==

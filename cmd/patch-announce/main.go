@@ -48,7 +48,7 @@ const (
 	defaultK8sBranch      = "master"
 	defaultReleaseRepoURL = "https://github.com/kubernetes/release"
 	defaultReleaseBranch  = "master"
-	defaultGCPorjectID    = "kubernetes-release-test"
+	defaultGCPorjectID    = "k8s-staging-release-test"
 	defaultLogLevel       = "info"
 
 	// separator which hopefully never appears in any of our keys/values.

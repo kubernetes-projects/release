@@ -18,13 +18,15 @@
 # CONSTANTS
 ###############################################################################
 
-readonly DEFAULT_PROJECT="kubernetes-release-test"
+# TODO: Need to reference official staging project here
+readonly DEFAULT_PROJECT="k8s-staging-release-test"
 readonly PROD_PROJECT="kubernetes-release"
 readonly TEST_PROJECT="${TEST_PROJECT:-${PROJECT_ID:-$DEFAULT_PROJECT}}"
 
-readonly DEFAULT_BUCKET="kubernetes-release-gcb"
+# TODO: Need to reference official staging project here
+readonly DEFAULT_BUCKET="k8s-staging-release-test"
 readonly PROD_BUCKET="kubernetes-release"
-readonly TEST_BUCKET="kubernetes-release-gcb"
+readonly TEST_BUCKET="k8s-staging-release-test"
 readonly CI_BUCKET="kubernetes-release-dev"
 
 readonly KUBE_CROSS_REGISTRY="us.gcr.io/k8s-artifacts-prod/build-image"

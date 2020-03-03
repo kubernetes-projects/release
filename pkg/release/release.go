@@ -38,7 +38,7 @@ const (
 	// gcbmgr/anago defaults
 	DefaultToolRepo   = "release"
 	DefaultToolBranch = "master"
-	DefaultProject    = "kubernetes-release-test"
+	DefaultProject    = "k8s-staging-release-test"
 	DefaultDiskSize   = "300"
 	BucketPrefix      = "kubernetes-release-"
 
