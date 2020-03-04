@@ -20,14 +20,14 @@
 
 # TODO(prototype): Need to reference official staging project here
 readonly DEFAULT_PROJECT="k8s-staging-release-test"
-# TODO(prototype): Need to reference test prod project here
-readonly PROD_PROJECT="k8s-staging-release-test"
+# TODO(prototype): Need to reference official prod project here
+readonly PROD_PROJECT="k8s-release-test-prod"
 readonly TEST_PROJECT="${TEST_PROJECT:-${PROJECT_ID:-$DEFAULT_PROJECT}}"
 
-# TODO(prototype): Need to reference official staging project here
+# TODO(prototype): Need to reference official staging bucket here
 readonly DEFAULT_BUCKET="k8s-staging-release-test"
-# TODO(prototype): Need to reference test prod project here
-readonly PROD_BUCKET="k8s-staging-release-test"
+# TODO(prototype): Need to reference official prod bucket here
+readonly PROD_BUCKET="k8s-release-test-prod"
 readonly TEST_BUCKET="k8s-staging-release-test"
 readonly CI_BUCKET="kubernetes-release-dev"
 
